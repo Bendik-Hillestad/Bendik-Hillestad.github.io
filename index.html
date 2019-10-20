@@ -10,45 +10,118 @@
 		<style>
 		    * { margin: 0; padding: 0; box-sizing: border-box; }
 			
-			h1 { font: 600 32px/1.2 "Segoe UI",Arial,Sans-Serif; }
-			
 			body
 			{
 			    display: flex;
 				flex-direction: column;
-			    width: 800px;
+			    width: 1000px;
 				max-width: 100%;
 				margin: 0 auto;
 				min-height: 100vh;
 			    background-color: #222;
-				color: #fff;
+				color: #ddd;
+				box-shadow: 0 10px 30px #111;
 			}
 			
-			header, footer
+			header
 			{
-			   padding: 1rem;
-			   background-color: #111; 
+			    padding: 1rem;
+			    background-color: #111;
+				border-bottom: 1px solid #aaa;
 			}
+			
+			footer
+			{
+			    padding: 2rem 1rem 3rem 1rem;
+				background-color: #111;
+				border-top: 1px solid #aaa;
+		    }
 			
 			main
 			{
 			    flex: 1;
 			    padding: 1rem;
 			    background-color: #111;
+				
+			}
+			
+			article
+			{
+			    
+			}
+			
+			section
+			{
+			    margin-bottom: 1rem;
+			}
+			
+			h1 { font: 600 32px/1.2 "Segoe UI",Arial,Sans-Serif; }
+			
+			a
+			{
+			    color: inherit;
+				text-decoration: none;
+			}
+			
+			p { margin-bottom: 1rem; }
+			
+			nav
+			{
+			    color: rgba(221, 221, 221, 0.8);
+				font-size: 18px;
+			    display: table;
+				white-space: nowrap;
+				margin-left: auto;
+			}
+			
+			nav > *
+			{
+			    display: inline-block;
+				vertical-align: middle;
+			    margin-left: 1rem;
+			}
+			
+			nav a:hover
+			{
+			    color: rgba(221, 221, 221, 1);
+			}
+			
+			svg
+			{
+				width: 32px;
+				height: 32px;
+				color: inherit;
+				fill: currentColor;
 			}
 		</style>
     </head>
 	<body>
-		<header>
-			<h1>This page is under construction</h1>
+		<header role="banner">
+			<nav role="navigation" aria-label="Main">
+			    <a href="#"><b>About</b></a>
+				<a href="#"><b>Blog</b></a>
+				<a href="#"><b>Resume</b></a>
+			    <a href="https://github.com/Bendik-Hillestad/" target="_blank" rel="noopener noreferrer"><svg><use href="#ghsvg" xlink:href="#ghsvg"></use></svg></a>
+				<a href="https://www.linkedin.com/in/bendik-h-612702144/" target="_blank" rel="noopener noreferrer"><svg><use href="#lisvg" xlink:href="#lisvg"></use></svg></a>
+			</nav>
 		</header>
 		<main role="main">
-			<section>
-				<p>Come back later</p>
-			</section>
+		    <article>
+			    <section>
+				    <h2>This page is under construction</h2>
+			    </section>
+				<section>
+				    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fringilla porttitor elementum. Aenean vehicula varius sapien, ut efficitur justo sollicitudin ac. In posuere mauris nec nunc venenatis, et auctor arcu ullamcorper. Quisque leo lorem, tempor et lectus quis, condimentum mattis urna. Donec ut aliquam erat. In vitae venenatis nulla, ac condimentum libero. Integer pellentesque lacinia hendrerit. Nunc bibendum enim eu turpis consectetur accumsan. Pellentesque consequat nibh a mi bibendum, efficitur finibus leo imperdiet. Cras vel facilisis dolor, vitae consequat elit. Proin vehicula est eu justo volutpat, ac dignissim est ultricies. Aenean rhoncus augue vitae interdum pellentesque.</p>
+					<p>Morbi consequat augue non eros malesuada ultrices. Nullam quis lobortis nunc. Phasellus convallis sed libero ut fermentum. Fusce ut dignissim ante, eu viverra mi. Nullam tincidunt est elit, vel viverra nunc blandit at. Duis vel justo vitae risus mollis vulputate. Ut fermentum nulla eu ex mollis, at euismod quam lacinia. Sed ultrices dui sit amet pretium porta. Aliquam finibus sed orci rutrum aliquam.</p>
+					<p>Cras maximus sed enim ac finibus. Curabitur ut ipsum libero. Aliquam erat volutpat. Nulla consectetur massa vitae neque aliquam ultrices. Ut ullamcorper est euismod, dictum ex ac, varius arcu. Sed rhoncus porttitor efficitur. Suspendisse quis facilisis turpis. Nulla blandit eros vitae risus suscipit, sed luctus est euismod.</p>
+					<p>In fringilla quam vehicula ex euismod dignissim. Aliquam pulvinar ligula vel lectus pretium, in malesuada mauris luctus. Mauris maximus ac sem vitae feugiat. Quisque luctus ac massa sit amet efficitur. Integer aliquam congue tempor. Nam faucibus tempus tortor eu posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus dictum tincidunt vulputate. Nam lobortis mattis nibh, et faucibus lacus. Aliquam sed aliquet orci. Proin congue convallis maximus. Cras enim felis, fringilla sed venenatis non, tincidunt in odio.</p>
+					<p>Etiam bibendum metus id justo suscipit mollis. Ut odio leo, pharetra vel massa dapibus, ultrices tincidunt turpis. Aenean eu neque lorem. Curabitur ultrices ante nec purus ullamcorper, ac mattis purus vulputate. Nullam rutrum tortor a condimentum pretium. Integer vitae condimentum metus. Morbi fermentum eget ex a posuere. Duis pretium nisl eu mauris vehicula, ut tincidunt est faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ultrices erat sit amet mattis auctor. Nam quis mauris eget nibh ullamcorper consequat non vitae nibh.</p>
+				</section>
+			</article>
 		</main>
 		<footer>
 			<small>Hosted with GitHub Pages</small>
 		</footer>
+		<svg style="display: none;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="ghsvg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol><symbol id="lisvg" viewbox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol></defs></svg>
 	</body>
 </html>
